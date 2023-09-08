@@ -12,16 +12,31 @@ import {
   tailwind,
   nodejs,
   mongodb,
-  git,
-  figma,
   pettersonapps,
   malevich,
   vvmd,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
+  graphql,
+  materialui,
+  nextjs,
+  theways,
+  sagaplanner,
+  carsharing,
+  facebook,
+  linkedin,
+  mail,
 } from "../assets";
+
+export const phoneNumbers = [
+  {
+    country: "UA",
+    number: "+ 380 631 048 147",
+  },
+  {
+    country: "CZ",
+    number: "+ 420 773 851 509",
+  },
+];
 
 export const navLinks = [
   {
@@ -40,19 +55,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Web Development",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "React Native Development",
     icon: mobile,
   },
   {
-    title: "Backend Developer (begginer)",
+    title: "Backend Development",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Webflow Development",
     icon: creator,
   },
 ];
@@ -79,12 +94,12 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Next JS",
+    icon: nextjs,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "Redux Toolkit",
+    icon: redux,
   },
   {
     name: "Node JS",
@@ -95,16 +110,20 @@ const technologies = [
     icon: mongodb,
   },
   {
+    name: "GraphQL",
+    icon: graphql,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
+    name: "Material UI",
+    icon: materialui,
+  },
+  {
     name: "Three JS",
     icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
   },
 ];
 
@@ -116,10 +135,10 @@ const experiences = [
     iconBg: "#383E56",
     date: "March 2021 - April 2022",
     points: [
-      "Participation in a few fast-paced projects as a Web and Mobile Engineer.",
+      "Participated in a few fast-paced projects as a Web and Mobile Engineer.",
       "Designed front-end architecture for Planner used to create a layout of the home interior.",
-      "Development of a taxi mobile application.",
-      "Support of the existing and development of a new functionality for an application for a preschool educational institution.",
+      "Developed a taxi mobile application.",
+      "Supported the existing and developed a new functionality for an application for a preschool educational institution.",
     ],
   },
   {
@@ -129,10 +148,10 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "April 2022 - November 2022",
     points: [
-      "Development of a company product with customer reporting, PDF generation and Gantt charting.",
-      "Development of landings for crypto companie.",
-      "Support of the application with the conversion of cryptocurrencies.",
-      "Development of an application for users engaged in testing various types of goods such as clothes, shoes, etc",
+      "Developed a company product with customer reporting, PDF generation and Gantt charting.",
+      "Developed landings for crypto companie.",
+      "Supported the application for cryptocurrencies conversion.",
+      "Developed a CRM system for users engaged in testing various types of goods such as clothes, shoes, etc.",
     ],
   },
   {
@@ -142,12 +161,11 @@ const experiences = [
     iconBg: "#383E56",
     date: "November 2022 - CURRENT",
     points: [
-      "Development and support of the education platform TheWays.",
-      "Creating various integrations using the Onlizer.",
+      "Development and support of TheWays education platform.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
-  }
+  },
 ];
 
 const testimonials = [
@@ -177,70 +195,107 @@ const testimonials = [
   },
 ];
 
-const projects = [
+const socialMedia = [
   {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    link: "https://www.linkedin.com/in/andrii-plyska/",
+    img: linkedin,
   },
   {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    link: "https://www.facebook.com/andriy.plyska.12/",
+    img: facebook,
   },
   {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    link: "mailto:andriy.plyska322@gmail.com",
+    img: mail,
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const projects = [
+  {
+    name: "The Ways",
+    description:
+      "The Ways educational platform is the web application designed for communication between users and mentors. The mentors can share  video materials and all the information on the topics of the user’s interest. Additionally, the user can book an online 1-2-1 meeting with a mentor in order to discuss issues in the field of user’s interest. The site also has various courses that users can take to improve or acquire new skills",
+    tags: [
+      {
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "jQuery",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Webflow",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: theways,
+    source_code_link: "",
+    url: "https://www.theways.io/",
+  },
+  {
+    name: "Saga Planner",
+    description: `Planner for creating a layout of a home interior. The user can draw his own layout or download a pre-made template. The glider includes the following functionalities:
+      7 options of drawing shapes; eraser; scaling the actual sizes of the layout; option to move the layout across the board; viewing the layout in real time; saving and placing an order.`,
+    tags: [
+      {
+        name: "ReactJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Redux",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Scss",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "KonvaJS",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: sagaplanner,
+    source_code_link: "",
+    url: "https://nordgrona.com/saga#page-section-616ebe98eddc1c74b4e722ee",
+  },
+  {
+    name: "Car Sharing",
+    description:
+      "A Car Rental web application is a digital platform designed to facilitate the process of renting automobiles to individuals and businesses. Its primary purpose is to provide users with a convenient and efficient way to browse, select, and reserve vehicles for a specified duration. Users can typically access a wide range of car options, including various makes, models, and sizes, often with the flexibility to choose between daily, weekly, or monthly rental periods.",
+    tags: [
+      {
+        name: "NextJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React",
+        color: "green-text-gradient",
+      },
+      {
+        name: "TailwintCSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: carsharing,
+    source_code_link: "https://github.com/Plyska/cars-sharing",
+    url: "https://cars-sharing.vercel.app/",
+  },
+];
+
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  socialMedia,
+};

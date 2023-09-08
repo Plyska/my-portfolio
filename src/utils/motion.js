@@ -86,3 +86,7 @@ export const staggerContainer = (staggerChildren, delayChildren) => {
     },
   };
 };
+
+export const handleCopy = (copiedText, message) => {
+  
+}
