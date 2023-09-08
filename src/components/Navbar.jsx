@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
-
 import { saveAs } from "file-saver";
 import myCV from "/CV - Andrii Plyska.pdf";
 
@@ -17,7 +15,6 @@ const Navbar = () => {
   };
 
   const clickOnLink = (link, isMobile) => () => {
-    console.log(link)
     isMobile && switchToggle();
     if (link) {
       setActive(link);
@@ -36,7 +33,11 @@ const Navbar = () => {
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <Link to="/" className="flex items-center gap-2" onClick={clickOnLink}>
+        <Link
+          to="/"
+          className="flex items-center gap-2"
+          onClick={clickOnLink("")}
+        >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
             Andrew &nbsp;
@@ -55,10 +56,10 @@ const Navbar = () => {
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
-          <button 
+          <button
             className="bg-secondary py-3 px-8 outline-none w-fit text-tertiary uppercase hover:bg-white font-bold rounded-xl"
             onClick={handleDownload}
-            >
+          >
             upload cv
           </button>
         </ul>

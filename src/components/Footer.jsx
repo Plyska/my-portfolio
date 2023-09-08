@@ -1,7 +1,5 @@
-import mail from "../assets/mail.png";
 import { phoneNumbers, socialMedia } from "../constants";
 import copy from "clipboard-copy";
-
 
 const Footer = () => {
   const handleCopy =
