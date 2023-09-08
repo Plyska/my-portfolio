@@ -1,7 +1,6 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
@@ -107,7 +106,7 @@ const Contact = () => {
           </label>
 
           <button
-            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+            className="bg-tertiary py-3 px-8 outline-none w-fit text-secondary hover:text-white font-bold shadow-md shadow-primary rounded-xl"
             type="submit"
           >
             {loading ? "Sending..." : "Send"}
