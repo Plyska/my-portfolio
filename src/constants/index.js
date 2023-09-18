@@ -15,6 +15,7 @@ import {
   pettersonapps,
   malevich,
   vvmd,
+  freelance,
   threejs,
   graphql,
   materialui,
@@ -129,16 +130,15 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Front-end developer",
-    company_name: "PettersonApps",
-    icon: pettersonapps,
+    title: "Web Developer",
+    company_name: "VVMD",
+    icon: vvmd,
     iconBg: "#383E56",
-    date: "March 2021 - April 2022",
+    date: "November 2022 - CURRENT",
     points: [
-      "Participated in a few fast-paced projects as a Web and Mobile Engineer.",
-      "Designed front-end architecture for Planner used to create a layout of the home interior.",
-      "Developed a taxi mobile application.",
-      "Supported the existing and developed a new functionality for an application for a preschool educational institution.",
+      "Development and support of TheWays education platform.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
   {
@@ -155,15 +155,28 @@ const experiences = [
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "VVMD",
-    icon: vvmd,
+    title: "Front-end developer",
+    company_name: "PettersonApps",
+    icon: pettersonapps,
     iconBg: "#383E56",
-    date: "November 2022 - CURRENT",
+    date: "March 2021 - April 2022",
     points: [
-      "Development and support of TheWays education platform.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Participated in a few fast-paced projects as a Web and Mobile Engineer.",
+      "Designed front-end architecture for Planner used to create a layout of the home interior.",
+      "Developed a taxi mobile application.",
+      "Supported the existing and developed a new functionality for an application for a preschool educational institution.",
+    ],
+  },
+  {
+    title: "Front-end developer",
+    company_name: "Freelance",
+    icon: freelance,
+    iconBg: "#383E56",
+    date: "February 2020 - April 2021",
+    points: [
+      "Development of landing pages and web applications using JS, TS, React, Angular.",
+      "Refactoring the legacy code using the latest technologies, developing new features and fixing bugs.",
+      "Support and development of mobile applications using TS, React Native; • Development and integration with such services as Google Sheets API, Firebase, Pipedrive, Nova Poshta API, IMDB API.",
     ],
   },
 ];

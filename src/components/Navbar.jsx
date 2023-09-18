@@ -4,7 +4,7 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 import { saveAs } from "file-saver";
-import myCV from "/CV - Andrii Plyska.pdf";
+import myCV from "/AndriiPlyska - CV.pdf";
 
 const Navbar = () => {
   const [active, setActive] = useState("");

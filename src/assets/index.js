@@ -24,6 +24,7 @@ import nextjs from "./tech/nextjs.png";
 import vvmd from "./company/vvmd.png";
 import pettersonapps from "./company/pettersonapps.png";
 import malevich from "./company/malevich.png";
+import freelance from "./company/freelance.png";
 
 import theways from "./theways.png";
 import sagaplanner from "./sagaplanner.png";
@@ -57,6 +58,7 @@ export {
   vvmd,
   pettersonapps,
   malevich,
+  freelance,
   nextjs,
   theways,
   sagaplanner,
